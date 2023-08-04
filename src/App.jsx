@@ -310,21 +310,6 @@ function MovieDetails({
     onSelectedId(null)
   }
 
-  // useEffect(
-  //   function () {
-  //     function callback(e) {
-  //       if (e.code === "Escape") {
-  //         onCloseMovie();
-  //       }
-  //     }
-  //     document.addEventListener("keydown", callback);
-  //     return () => {
-  //       document.removeEventListener("keydown", callback);
-  //     };
-  //   },
-  //   [onCloseMovie]
-  // );
-
   useKey('Escape', onCloseMovie)
 
   useEffect(
